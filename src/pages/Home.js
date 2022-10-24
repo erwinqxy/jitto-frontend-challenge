@@ -32,8 +32,8 @@ export default function Home() {
         </li>
         <li className="home-list-items">
           {" "}
-          <strong>Design: </strong>: Be as creative as possible you can look at our
-          landing page (www.getjitto.com) to get some design inspiration or look at some
+          <strong>Design: </strong>: Be as creative as possible you can look at
+          (<a href="www.getjitto.com">our landing page</a>) to get some design inspiration or look at some
           of inspiration companies like instacart.com, faire.com and similar.
         </li>
       </list>
