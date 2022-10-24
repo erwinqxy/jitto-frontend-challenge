@@ -73,4 +73,12 @@
     margin: 0 auto;
     max-width: 320px;
   }
+
+  .Detail {
+    padding: 60px 0;
+  }
+
+  .detail-container{
+    text-align: left;
+  }
 }
