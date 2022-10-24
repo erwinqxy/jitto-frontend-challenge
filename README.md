@@ -1,6 +1,6 @@
 # Check it out
 
-[Here](https://github.com/erwinqxy/jitto-frontend-challenge)
+[Here](https://jitto-frontend-challenge.vercel.app/)
 
 # Getting Started with Create React App
 
