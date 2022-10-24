@@ -21,7 +21,7 @@ export default function Login() {
       theme: "light",
     });
   const notifyError = () =>
-    toast.error("Check your username or password.", {
+    toast.error("Password less than 8 characters", {
       position: "top-right",
       autoClose: 3000,
       hideProgressBar: false,
