@@ -12,7 +12,7 @@ body {
 }
 
 .nav {
-  background-color: #333;
+  background-color: #763f98;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -43,12 +43,12 @@ body {
 }
 
 .nav li.active {
-  background-color: #555;
-  border-bottom: 3px solid red;
+  background-color: #3d085c;
+  border-bottom: 3px solid rgb(241, 14, 143);
 }
 
 .nav li:hover {
-  background-color: #777;
+  background-color: #ad64db;
 }
 
 .home-list {
