@@ -1,11 +1,36 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./Login.css";
 
 export default function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
+  const notifySucess = () =>
+    toast.success("Success!", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+  const notifyError = () =>
+    toast.error("Check your username or password.", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
 
   function validateForm() {
     return username.length > 0 && password.length > 0;
@@ -13,6 +38,11 @@ export default function Login() {
 
   function handleSubmit(event) {
     event.preventDefault();
+    if (password.length < 8) {
+      notifyError();
+    } else {
+      notifySucess();
+    }
   }
 
   return (
@@ -40,6 +70,7 @@ export default function Login() {
           Login
         </Button>
       </Form>
+      <ToastContainer limit={1} />
     </div>
   );
 }
