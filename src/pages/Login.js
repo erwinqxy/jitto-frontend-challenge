@@ -70,7 +70,7 @@ export default function Login() {
           Login
         </Button>
       </Form>
-      <ToastContainer limit={1} />
+      <ToastContainer/>
     </div>
   );
 }
